@@ -3,6 +3,7 @@
 buildscript {
 
     repositories {
+        mavenLocal()
         google()
         jcenter()
         mavenCentral()
@@ -13,8 +14,13 @@ buildscript {
     }
 }
 
+plugins {
+    id 'maven-publish'
+}
+
 allprojects {
     repositories {
+        mavenLocal()
         google()
         jcenter()
         mavenCentral()
